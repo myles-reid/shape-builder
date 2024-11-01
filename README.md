@@ -15,8 +15,8 @@ Fun little color codded drop down
 
 ## Screenshots
 
-![App Screenshot](./assets/media/img/screenshot-1.png)
-![App Screenshot](./assets/media/img/screenshot-2.png)
+![App Screenshot](./assets/img/screenshot-1.png)
+![App Screenshot](./assets/img/screenshot-2.png)
 
 ---
 <p float="left">
