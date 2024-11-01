@@ -14,13 +14,13 @@ body {
   height: 100svh;
   width: 100svw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 
 .wrapper {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,9 +137,15 @@ button {
 button:hover{
   background-color:#2090bd
 }
+.main-box-wrapper {
+  display: flex;
+  height: 75%;
+  width: 100%;
+}
 
 .main-box {
   display: grid;
+  flex: 1;
   grid-template:
   var(--app-grid-height) 
   var(--app-grid-height) 
@@ -153,17 +159,33 @@ button:hover{
   gap: 15px;
   justify-content: center;
   align-content: center;
-  height: 75%;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
   width: 100%;
   background-color: #2e3347;
   border-radius: 8px;
 }
 
-.box {
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+  height: 20px;
+  width: 600px;
+  color: #fff;
+}
+
+.square {
   height: 100px;
   width: 100px;
+  border-radius: 4px;
 }
 
 .circle {
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
