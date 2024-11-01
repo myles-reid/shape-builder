@@ -10,41 +10,160 @@ body {
   background-color: var(--app-color-dark-bg);
 }
 
-.outer-box {
+.outer {
+  height: 100svh;
+  width: 100svw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.wrapper {
+
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  background-color: blue;
-  height: 100svh; 
+  justify-content:space-between;
+  height: 600px;
+  width: 600px;
+}
+
+.title h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  position:relative;
+  color: #fff;
+  appearance: none;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  height: 40px;
+  width: 225px;
+  border-radius: 6px;
+  background-image:
+  linear-gradient(45deg, transparent 50%, #0019ff 50%),
+  linear-gradient(135deg, #0019ff 50%, transparent 50%),
+  linear-gradient(to right, #33acdd, #33acdd);
+background-position:
+  calc(100% - 13px) calc(1em + 2px),
+  calc(100% - 8px) calc(1em + 2px),
+  100% 0;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 2.5em;
+background-repeat: no-repeat;
+background-color: #2e3347;
+transition: all 0.2s ease-in;
+}
+
+select:hover {
+  background-color:#33acdd;
+}
+
+select:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, #0019ff, #0019ff);
+  background-position:
+    calc(100% - 8px) 1em,
+    calc(100% - 13px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: #808080;
+  background-color: #0019ff;
+  outline: 0;
+  height: auto;
+  overflow:hidden;
+}
+
+.color-wrap {
+  position:relative;
+  width: 225px;
+  height: 40px;
+}
+
+#color {
+  position: relative;
+  z-index: 10;
+}
+
+.blue:hover {
+  background-color: #09f;
+}
+
+.green:hover {
+  background-color: #9f0;
+}
+
+.orange:hover {
+  background-color: #f90;
+}
+
+.pink:hover {
+  background-color: #f09;
+}
+
+.purple:hover {
+  background-color: #90f;
 }
 
 button {
+  font-size: 18px;
   font-weight: 600;
-  height: 50px;
-  width: 100px;
+  height: 40px;
+  width: 125px;
   border-radius: 6px;
-  box-shadow: 1px 1px 1px #000;
-  background-color: green;
+  background-color: #33acdd;
+  transition: all 0.25s ease-in-out;
 }
 
-.inner-box {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+button:hover{
+  background-color:#2090bd
+}
+
+.main-box {
+  display: grid;
+  grid-template:
+  var(--app-grid-height) 
+  var(--app-grid-height) 
+  var(--app-grid-height) 
+  var(--app-grid-height) /
+  var(--app-grid-width) 
+  var(--app-grid-width) 
+  var(--app-grid-width) 
+  var(--app-grid-width) 
+  var(--app-grid-width);
+  gap: 15px;
+  justify-content: center;
+  align-content: center;
+  height: 75%;
   width: 100%;
+  background-color: #2e3347;
+  border-radius: 8px;
 }
 
-.innerbox {
-  height: 200px;
-  width: 200px;
-  background-color: orange;
+.box {
+  height: 100px;
+  width: 100px;
 }
 
 .circle {
   border-radius: 50%;
-}
-
-.diamond {
-  transform:rotateZ(45deg);
 }

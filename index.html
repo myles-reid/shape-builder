@@ -17,28 +17,33 @@
     <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
-    <div class="contianer">
-      <div class="title">
-        <h2>Shape Factor</h2>
+    <div class="contianer outer">
+      <div class="wrapper">
+        <div class="title">
+          <h2>Shape Factory</h2>
+        </div>
+        <div class="options">
+          <select name="shape" id="shape">
+            <option selected disabled hidden>--Shape--</option>
+            <option value="circle">Circle</option>
+            <option value="square">Square</option>
+          </select>
+          <div class="color-wrap">
+            <select name="colour" id="colour">
+              <option selected disabled hidden>--Colour--</option>
+              <option class="blue" value="#09f">Blue</option>
+              <option class="green" value="#9f0">Green</option>
+              <option class="orange" value="#f90">Orange</option>
+              <option class="pink" value="#f09">Pink</option>
+              <option class="purple" value="#90f">Purple</option>
+            </select>
+          </div>
+          <button>Create</button>
+        </div>
+        <div class="main-box">
+        </div>
+        <div class="info-box"><p class="info-text"><p></div>
       </div>
-      <div class="options">
-        <select name="shape" id="shape">
-          <option value="">--Shape--</option>
-          <option value="circle">Circle</option>
-          <option value="square">Square</option>
-        </select>
-        <select name="colour" id="colour">
-          <option value="">--Colour--</option>
-          <option value="#09f">Blue</option>
-          <option value="#9f0">Green</option>
-          <option value="#f90">Orange</option>
-          <option value="#f09">Pink</option>
-          <option value="#90f">Purple</option>
-        </select>
-        <button>Create</button>
-      </div>
-      <div class="main-box"></div>
-      <div class="info-box"><p class="info-text"><p></div>
     </div>
   </body>
 </html>
